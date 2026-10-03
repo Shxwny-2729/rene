@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Georgia", serif;
+  background: #1e1e2f;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  overflow: hidden;
+}
+.intro {
+  text-align: center;
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+  opacity: 1;
+  transition: opacity 1s ease;
+}
+.btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background: #f5eeef;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  color: rgb(5, 2, 2);
+  transition: 0.3s;
+}
+.btn:hover {
+  background: #b1acad;
+}
+.letter {
+  display: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    #fdf6e3 0px,
+    #fdf6e3 27px,
+    #d2d2d2 28px
+  );
+  color: #333;
+  padding: 30px 30px 30px 70px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  height: 600px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: left;
+  position: relative;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  font-family: "Courier New", monospace;
+  overflow: visible;
+}
+.letter p {
+  margin-top: -55px;
+  overflow: hidden;
+}
+.letter::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 100%;
+  background-image: radial-gradient(circle, #1e1e2f 6px, transparent 7px);
+  background-size: 25px 40px;
+  background-repeat: repeat-y;
+  background-position: center;
+  pointer-events: none;
+}
+.signature {
+  position: absolute;
+  bottom: -20px;
+  right: 6px;
+  width: 180px;
+  opacity: 0.9;
+  pointer-events: none;
+  transform: rotate(-2deg);
+}
